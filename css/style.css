@@ -8,14 +8,14 @@
     --navbar-height: 59px;
 }
 body{
-    background: url(../img/bgg.PNG) no-repeat left/cover ;
+    background: white ;
     opacity: 0.9;
 }
 /* Navigation bar  */
 #navbar{
     display: flex;
     align-items: center;
-    position: absolute;
+    position: relative;
 }
 #navbar::before{
     content: "";
@@ -24,9 +24,9 @@ body{
     top: 0px;
     left:0px;
     height: 100%;
-    width: 164%;
+    width: 100%;
     z-index: -1;
-    opacity: 0.4;
+    opacity: 0.2;
 }
 /*Navigation bar: logo and image  */
 #logo{
@@ -62,7 +62,7 @@ body{
 #home{
     display: flex;
     flex-direction: column;
-    padding: 3px 20px;
+    padding: 3px 100px;
     height: 600px;
     justify-content: left;
     align-items: left;
@@ -71,26 +71,26 @@ body{
 #home::before{
     content: "";
     position: absolute;
-    background: url(..//img/Capture2.PNG) no-repeat center/cover;
+    background: url(..//img/bgg1.png) no-repeat center/cover;
     height:90%;
     width: 100%;
     top: 0px;
     left: 0px;
-    z-index: -1;
+    z-index: -2;
     opacity: 0.9;  
 }
 #left{
     margin-left: 10px;
-    margin-top: 200px;
+    margin-top: 113px;
     width: 200px;
 }
 #right{
-    margin-left: 300px;
+    margin-left: 470px;
     margin-top: 0px;
 }
 #home h1{
     margin-left: 30px;
-    margin-top:-250px;
+    margin-top:-260px;
     color: white;
     text-align: center;
     font-size: 2.5rem;
@@ -102,10 +102,11 @@ body{
     text-align: center;
     font-size: 1.5rem;
 }
-#home button{
-    margin-left: 300px;
-}
+
 /* about me  */
+#about-me-section{
+    height : 200px;
+}
 #about-me{
     margin: 70px;
     text-align: center;
@@ -113,31 +114,42 @@ body{
 #about-me::before{
     content: "";
     position: absolute;
-    background: url('../img/bgg.PNG') no-repeat center/cover;
-    top: 675px;
+    background: #020252;
+    top: 704px;
     left: 0px;
     width: 100%;
-    height: 100%;
+    height: 45%;
     z-index: -1;
-    opacity: 0.4;
+    opacity: 0.9;
 }
 #about-me h1{
-    color:rgb(3, 41, 77);
+    color: rgb(141, 196, 247);
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 2.5rem;
     
 }
 #about-me p{
-    color:rgb(22, 75, 126);
+    color:white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 /* My skills */
+#my-skills::before{
+    content: "";
+    position: absolute;
+    background: #062b7c;
+    top: 1061px;
+    left: 0px;
+    width: 100%;
+    height: 55%;
+    z-index: -1;
+    opacity: 0.9;
+}
 #my-skills-head h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color:rgb(3, 41, 77);
+    color:rgb(141, 196, 247);
     text-align: center;
     font-size: 2.5rem;
-    margin-top: 80px;
+    margin-top: 200px;
 }
 #my-skills{
     margin: 34px;
@@ -146,8 +158,9 @@ body{
 }
 #my-skills .box{
     border-radius: 28px;
-    padding: 34px;
+    padding: 40px;
 }
+
 #my-skills .box img{
     height: 150px;
     width: 150px;
@@ -160,7 +173,7 @@ body{
 }
 #my-hobbies-head h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color:rgb(3, 41, 77);
+    color:rgb(141, 196, 247);
     text-align: center;
     font-size: 2.5rem;
     margin-top: 20px
@@ -187,6 +200,10 @@ body{
     font-size: 1.2rem;
     padding:12px;
     color: rgb(11, 51, 112);
+}
+.h-secondary1{
+    font-size: 1.2rem;
+    color: white;
 }
 .btn{
     padding: 6px 20px;
