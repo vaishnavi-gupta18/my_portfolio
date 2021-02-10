@@ -221,6 +221,21 @@ body{
     height: 190px;
     display: block;
 }
+#like{
+    display: flex;
+}
+#like img{
+    margin-top: 22px;
+    margin-left: 150px;
+}
+#like p{
+    margin-left: 150px;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Cairo', sans-serif;
+    color: #020252;
+}
 footer{
     background :rgb(7, 1, 39);
     color : white;
